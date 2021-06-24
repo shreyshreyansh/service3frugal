@@ -21,12 +21,12 @@ mongoose.connection.on("connected", function (ref) {
   app.use(express.static("public"));
 
   //functions
-  const setadevice = require("./routes/setadevice");
-  const getalldevices = require("./routes/getalldevices");
-  const getuserdevices = require("./routes/getuserdevices");
-  const getdevice = require("./routes/getdevice");
-  const sensorupload = require("./routes/sensorupload");
-  const deleteDevice = require("./routes/deletedevice");
+  const setadevice = require("../service3frugal-main/api/v1/routes/setadevice");
+  const getalldevices = require("../service3frugal-main/api/v1/routes/getalldevices");
+  const getuserdevices = require("../service3frugal-main/api/v1/routes/getuserdevices");
+  const getdevice = require("../service3frugal-main/api/v1/routes/getdevice");
+  const sensorupload = require("../service3frugal-main/api/v1/routes/sensorupload");
+  const deleteDevice = require("../service3frugal-main/api/v1/routes/deletedevice");
 
   //route
   app.post("/setdevice", function (req, res) {
