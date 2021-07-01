@@ -1,5 +1,5 @@
-const deviceData = require("../../../database/model/connect");
-const req = require("../../../functions/request");
+const deviceData = require("../database/model/connect");
+const req = require("../functions/request");
 module.exports = (request, response) => req(request, response, createDevice);
 
 const createDevice = (req, res, jsondata) => {

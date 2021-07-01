@@ -1,4 +1,4 @@
-const deviceData = require("../../../database/model/connect");
+const deviceData = require("../database/model/connect");
 
 module.exports = (req, res) => {
   var day = new Date();
